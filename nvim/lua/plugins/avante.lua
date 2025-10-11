@@ -11,26 +11,37 @@ return {
   opts = {
     -- add any opts here
     -- for example
-    provider = "claude",
+    provider = "copilot", -- default provider
     providers = {
-      claude = {
-        endpoint = "https://api.anthropic.com",
-        model = "claude-3-7-sonnet-latest",
-        timeout = 30000, -- Timeout in milliseconds
-        -- extra_request_body = {
-        --   temperature = 0.75,
-        --   max_tokens = 20480,
-        -- },
-      },
-      moonshot = {
-        endpoint = "https://api.moonshot.ai/v1",
-        model = "kimi-k2-0711-preview",
-        timeout = 30000, -- Timeout in milliseconds
+      copilot = {
+        model = "claude-3.7-sonnet",
+        timeout = 10 * 60 * 1000,
         extra_request_body = {
-          temperature = 0.75,
-          max_tokens = 32768,
+          temperature = 0,
+          max_tokens = 80000,
         },
+        max_completion_tokens = 80000,
+        reasoning_effort = "high",
       },
+      -- claude = {
+      --   endpoint = "https://api.anthropic.com",
+      --   model = "claude-3-7-sonnet-latest",
+      --   timeout = 30000, -- Timeout in milliseconds
+      --   -- extra_request_body = {
+      --   --   temperature = 0.75,
+      --   --   max_tokens = 20480,
+      --   -- },
+      -- },
+      -- moonshot = {
+      --   endpoint = "https://api.moonshot.ai/v1",
+      --   model = "kimi-k2-0711-preview",
+      --   timeout = 30000, -- Timeout in milliseconds
+      --   extra_request_body = {
+      --     temperature = 0.75,
+      --     max_tokens = 32768,
+      --   },
+      -- },
+      --
     },
   },
   dependencies = {

@@ -2,7 +2,13 @@ return {
   {
     "catppuccin/nvim",
     name = "catppuccin",
-    priority = 1000,
+    priority = 10000,
+    init = function()
+      local ok, mod = pcall(require, "catppuccin.groups.integrations.bufferline")
+      if ok and mod and not mod.get and type(mod.get_theme) == "function" then
+        mod.get = mod.get_theme
+      end
+    end,
     opts = {
       integrations = {
         -- your integrations here if any
