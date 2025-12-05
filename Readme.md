@@ -6,3 +6,4 @@ All of my dot configs
 - Ghostty
 - Nvim
 - Zellij (which I don't use anymore, in favor of tmux)
+- Zshrc
