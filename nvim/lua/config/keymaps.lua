@@ -50,3 +50,8 @@ end, { desc = "Find Files (including hidden)" })
 
 -- Paste without overwriting register
 vim.keymap.set("v", "<leader>p", '"_dP', { desc = "Paste without overwriting register" })
+
+-- disable inline notifications for distraction free coding
+vim.keymap.set("n", "<leader>td", function()
+  vim.diagnostic.enable(not vim.diagnostic.is_enabled())
+end, { desc = "Toggle diagnostics" })

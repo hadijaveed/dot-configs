@@ -14,7 +14,7 @@ return {
     provider = "copilot", -- default provider
     providers = {
       copilot = {
-        model = "claude-3.7-sonnet",
+        model = "claude-haiku-4.5",
         timeout = 10 * 60 * 1000,
         extra_request_body = {
           temperature = 0,

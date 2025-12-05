@@ -1,0 +1,27 @@
+-- return {
+--   {
+--     "ribru17/bamboo.nvim",
+--     priority = 1000,
+--     opts = {
+--       highlights = {
+--         LineNr = { fg = "$light_grey" }, -- Make line numbers more visible
+--         CursorLineNr = { fg = "$purple", fmt = "bold" }, -- Current line number
+--         NeoTreeDimText = { fg = "$light_grey" }, -- Brighter for hidden files
+--         NeoTreeGitIgnored = { fg = "$grey" }, -- Git ignored files
+--         NeoTreeDotfile = { fg = "$light_grey" }, -- Dotfiles specifically
+--         -- Indent markers - barely visible (using absolute darkest color)
+--         NeoTreeIndentMarker = { fg = "$contrast" }, -- Barely visible indent guides
+--         IblIndent = { fg = "$contrast" }, -- General indent lines - barely visible
+--         IndentBlanklineChar = { fg = "$contrast" }, -- Legacy indent-blankline
+--         -- Folder expander arrows
+--         NeoTreeExpander = { fg = "$light_grey" }, -- The > arrow for folders
+--       },
+--     },
+--   },
+--   {
+--     "LazyVim/LazyVim",
+--     opts = {
+--       colorscheme = "bamboo",
+--     },
+--   },
+-- }

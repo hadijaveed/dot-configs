@@ -1,0 +1,36 @@
+-- return {
+--   {
+--     "catppuccin/nvim",
+--     name = "catppuccin",
+--     priority = 10000,
+--     init = function()
+--       local ok, mod = pcall(require, "catppuccin.groups.integrations.bufferline")
+--       if ok and mod and not mod.get and type(mod.get_theme) == "function" then
+--         mod.get = mod.get_theme
+--       end
+--     end,
+--     opts = {
+--       integrations = {
+--         -- your integrations here if any
+--       },
+--       custom_highlights = function(colors)
+--         return {
+--           LineNr = { fg = colors.overlay1 }, -- Make line numbers more visible
+--           CursorLineNr = { fg = colors.lavender, style = { "bold" } }, -- Current line number
+--           NeoTreeDimText = { fg = colors.overlay1 }, -- Brighter for hidden files
+--           NeoTreeGitIgnored = { fg = colors.overlay0 }, -- Git ignored files
+--           NeoTreeDotfile = { fg = colors.overlay1 }, -- Dotfiles specifically
+--           -- Optional: Other Neo-tree elements you might want to adjust
+--           NeoTreeIndentMarker = { fg = colors.surface1 }, -- Indent guides
+--           NeoTreeExpander = { fg = colors.overlay2 }, -- The > arrow for folders
+--         }
+--       end,
+--     },
+--   },
+--   {
+--     "LazyVim/LazyVim",
+--     opts = {
+--       colorscheme = "catppuccin",
+--     },
+--   },
+-- }

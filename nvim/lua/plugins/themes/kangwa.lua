@@ -1,0 +1,84 @@
+-- return {
+--   {
+--     "rebelot/kanagawa.nvim",
+--     priority = 1000,
+--     opts = {
+--       compile = true, -- Enable compilation for better performance
+--       undercurl = true,
+--       commentStyle = { italic = true },
+--       functionStyle = {},
+--       keywordStyle = { italic = true },
+--       statementStyle = { bold = true },
+--       typeStyle = {},
+--       transparent = false,
+--       dimInactive = false,
+--       terminalColors = true,
+--       theme = "wave", -- "wave" (default dark), "dragon" (alt dark), or "lotus" (light)
+--       background = {
+--         dark = "wave",
+--         light = "lotus",
+--       },
+--       overrides = function(colors)
+--         local palette = colors.palette
+--         local theme = colors.theme
+--
+--         return {
+--           -- Line numbers - more visible
+--           LineNr = { fg = palette.sumiInk4, bg = "none" },
+--           -- Current line number - bold and accented
+--           CursorLineNr = { fg = palette.oniViolet, bg = "none", bold = true },
+--
+--           -- Neo-tree: Dim text (hidden files) - much brighter and clearly visible
+--           NeoTreeDimText = { fg = palette.fujiGray, bg = "none" },
+--           -- Neo-tree: Git ignored files
+--           NeoTreeGitIgnored = { fg = palette.fujiGray, bg = "none" },
+--           -- Neo-tree: Dotfiles specifically
+--           NeoTreeDotfile = { fg = palette.fujiGray, bg = "none" },
+--           -- Neo-tree: Indent markers - subtle
+--           NeoTreeIndentMarker = { fg = palette.sumiInk3, bg = "none" },
+--           -- Indent-blankline markers - subtle
+--           IblIndent = { fg = palette.sumiInk3, nocombine = true },
+--           IndentBlanklineChar = { fg = palette.sumiInk3 },
+--           -- Neo-tree: Folder expander arrows
+--           NeoTreeExpander = { fg = palette.fujiGray, bg = "none" },
+--
+--           -- Neo-tree: Git status - clear visual distinction
+--           NeoTreeGitUntracked = { fg = palette.surimiOrange, bg = "none" }, -- Bright for visibility
+--           NeoTreeGitModified = { fg = palette.carpYellow, bg = "none" }, -- Changed files
+--           NeoTreeGitAdded = { fg = palette.springGreen, bg = "none" }, -- New/staged files
+--           NeoTreeGitDeleted = { fg = palette.samuraiRed, bg = "none" }, -- Removed files
+--           NeoTreeGitConflict = { fg = palette.samuraiRed, bg = "none", bold = true }, -- Urgent attention
+--           NeoTreeGitStaged = { fg = palette.crystalBlue, bg = "none" }, -- Ready to commit
+--           NeoTreeGitUnstaged = { fg = palette.carpYellow, bg = "none" }, -- Pending changes
+--
+--           -- BufferLine/TabLine - bright and readable
+--           -- Active/selected tab - bright white text, bold
+--           BufferLineTabSelected = { fg = palette.fujiWhite, bg = palette.sumiInk2, bold = true },
+--           BufferLineBufferSelected = { fg = palette.fujiWhite, bg = palette.sumiInk2, bold = true },
+--           -- Inactive tabs - light gray, clearly visible
+--           BufferLineTab = { fg = palette.sumiInk5, bg = palette.sumiInk1 },
+--           BufferLineBuffer = { fg = palette.sumiInk5, bg = palette.sumiInk1 },
+--           -- Background fill
+--           BufferLineFill = { bg = palette.sumiInk0 },
+--           -- Modified buffers indicator
+--           BufferLineModified = { fg = palette.carpYellow, bg = palette.sumiInk1 },
+--           BufferLineModifiedSelected = { fg = palette.carpYellow, bg = palette.sumiInk2, bold = true },
+--           -- Git status indicators in bufferline
+--           BufferLineAdded = { fg = palette.springGreen, bg = palette.sumiInk1 },
+--           BufferLineAddedSelected = { fg = palette.springGreen, bg = palette.sumiInk2, bold = true },
+--           BufferLineDeleted = { fg = palette.samuraiRed, bg = palette.sumiInk1 },
+--           BufferLineDeletedSelected = { fg = palette.samuraiRed, bg = palette.sumiInk2, bold = true },
+--           BufferLineChanged = { fg = palette.carpYellow, bg = palette.sumiInk1 },
+--           BufferLineChangedSelected = { fg = palette.carpYellow, bg = palette.sumiInk2, bold = true },
+--         }
+--       end,
+--     },
+--   },
+--   {
+--     "LazyVim/LazyVim",
+--     opts = {
+--       colorscheme = "kanagawa",
+--     },
+--   },
+-- }
+--
