@@ -1,0 +1,15 @@
+theme = Dracula
+
+# Font rendering
+font-family = "JetBrainsMono Nerd Font"  # Or your preferred font
+font-size = 14
+
+
+# Cursor settings
+cursor-style = block
+
+# Option key disabled for Zellij - using Cmd key instead
+# macos-option-as-alt = left
+
+background-opacity = 0.95
+
