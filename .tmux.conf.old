@@ -1,3 +1,4 @@
+
 # ==========================================
 # 1. GENERAL SETTINGS
 # ==========================================
@@ -33,12 +34,12 @@ set -g status-left ""
 
 # Right side: Session name with subtle box
 set -g status-right-length 50
-set -g status-right "#[fg=#3b4261,bg=default]#[fg=#9ece6a,bg=#3b4261]  #S #[fg=#3b4261,bg=default]"
+set -g status-right "#[fg=#45475a,bg=default]#[fg=#cdd6f4,bg=#45475a]  #S #[fg=#45475a,bg=default]"
 set -g status-justify left
 
 # Window (Tab) Styling
-set -g window-status-format "#[fg=#2e3d32,bg=default]#[fg=#7aa874,bg=#2e3d32] #I #W #[fg=#2e3d32,bg=default]"
-set -g window-status-current-format "#[fg=#9ece6a,bg=default]#[fg=#1a1b26,bg=#9ece6a,bold] #I #W #[fg=#9ece6a,bg=default]"
+set -g window-status-format "#[fg=#45475a,bg=default]#[fg=#a6adc8,bg=#45475a] #I #W #[fg=#45475a,bg=default]"
+set -g window-status-current-format "#[fg=#89b4fa,bg=default]#[fg=#1e1e2e,bg=#89b4fa,bold] #I #W #[fg=#89b4fa,bg=default]"
 set -g window-status-separator "  "
 
 
@@ -185,11 +186,11 @@ run '~/.tmux/plugins/tpm/tpm'
 # Pane borders (thin single line)
 set -g pane-border-lines single
 
-# Active pane: Green accent (matches active tab)
-set -g pane-active-border-style bg=default,fg=#9ece6a
+# Active pane: Blue accent (matches active tab)
+set -g pane-active-border-style bg=default,fg=#89b4fa
 
 # Inactive panes: Subtle grey
-set -g pane-border-style bg=default,fg=#3b4261
+set -g pane-border-style bg=default,fg=#45475a
 
 
 set -g @resurrect-strategy-nvim 'session'
